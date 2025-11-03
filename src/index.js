@@ -3,7 +3,7 @@ function getImg() {
 
 	if (!img) {
 		throw new Error("Element with id 'img' not found");
-
+		console.log("hoge")
 		// const error = new Error("Element with id 'img' not found");
 		// throw error;
 	}
