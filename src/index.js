@@ -3,6 +3,9 @@ function getImg() {
 
 	if (!img) {
 		throw new Error("Element with id 'img' not found");
+
+		const error = new Error("Element with id 'img' not found");
+		throw error;
 	}
 
 	return img;
@@ -10,10 +13,4 @@ function getImg() {
 
 document.addEventListener('DOMContentLoaded', () => {
 	getImg();
-});
-
-window.addEventListener('load', () => {
-  setTimeout(() => {
-    throw new Error('GTM JS Error trigger test');
-  }, 100);
 });
