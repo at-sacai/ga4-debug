@@ -2,7 +2,7 @@ function getImg() {
 	const img = document.getElementById('img');
 
 	if (!img) {
-		throw new Error("img　is not found");
+		throw new Error("img is not found");
 	}
 
 	return img;
