@@ -12,6 +12,6 @@ function getImg() {
 	return img;
 }
 
-document.addEventListener('DOMContentLoaded', () => {
-	getImg();
+window.addEventListener('load', () => {
+  getImg();
 });
