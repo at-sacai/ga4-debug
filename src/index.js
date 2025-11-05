@@ -2,16 +2,12 @@ function getImg() {
 	const img = document.getElementById('img');
 
 	if (!img) {
-		console.log("hoge")
 		throw new Error("Element with id 'img' not found");
-
-		// const error = new Error("Element with id 'img' not found");
-		// throw error;
 	}
 
 	return img;
 }
 
-window.addEventListener('load', () => {
+document.getElementById("button").addEventListener('click', () => {
   getImg();
 });
